@@ -9,8 +9,7 @@ for (var i=0; i<=8; i++) {
     var ampm = 'am';
     if (hour === 12) {
         ampm = 'pm';
-    }
-    if (hour > 12) {
+    } else if (hour > 12) {
         hour = hour - 12;
         ampm = 'pm';
     };
