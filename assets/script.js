@@ -16,7 +16,7 @@ for (var i=0; i<=8; i++) {
     timeTableEl.append(`
         <tr>
         <th scope="row">${hour}${ampm}</th>
-        <td colspan="3">Meeting 1</td>
+        <td colspan="3">Meeting ${i+1}</td>
         <td>@</td>
         </tr>
     `);
