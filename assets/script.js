@@ -24,22 +24,20 @@ function renderTable() {
         <div class="row">
         
         <div class="col-1 hourColumn">
-        ${hour}${ampm} 
+            ${hour}${ampm} 
         </div>
         
         <div class="col-10" data-hour="${dataHour}" id="idHour${dataHour}">
-        <textarea class="meetingPlan" id="textArea${dataHour}"></textarea>
+            <textarea class="meetingPlan" id="textArea${dataHour}"></textarea>
         </div>
         
         <div class="col-1 saveColumn" data-savebutton="${dataHour}">
-        <i class="bi bi-save-fill" data-savebutton="${dataHour}"></i>
+            <i class="bi bi-save-fill" data-savebutton="${dataHour}"></i>
         </div>
         
-        </div>
-        `);
+        </div>`);
         
-        var idHourString = "#idHour" + dataHour; // string with the element Id 
-        var idHourEl = $(idHourString); // reference to element to pass as an argument
+        var idHourEl = $("#idHour" + dataHour); // reference to element to pass as an argument
         var hourValue = idHourEl.data("hour"); // storing element's dataset attribute to pass as an argument
         var textAreaEl = document.getElementById("textArea" + dataHour); // text area element reference
         var textAreaString = localStorage.getItem("textArea" + dataHour); // get saved text out of storage
@@ -49,11 +47,10 @@ function renderTable() {
         };
         
         colorRows(hourValue, idHourEl);
-    }; // end of for loop
-    
+    }; // end of for loop   
 };
 
-renderTable(); // any references to HTML elements created by this function but be done after this call
+renderTable(); // any references to HTML elements created by this function must be done after this call
 var saveColumnEl = $('.saveColumn'); // save buttons' parent element reference, only works after renderTable() executes
 
 // press save icon to save corresponding text area

@@ -71,7 +71,6 @@ textarea {
 }
 
 /* my css */
-
 /* class for text areas, z-index makes sure the text areas stay on top of everything */
 .meetingPlan {
   position: absolute;
