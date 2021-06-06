@@ -26,7 +26,7 @@ function renderTable() {
                     ${hour}${ampm} 
                 </div>
                 <div class="col-10" data-hour="${dataHour}" id="idHour${dataHour}">
-                    <textarea class="meetingPlan" placeholder="Add Meeting"></textarea>
+                    <textarea class="meetingPlan" placeholder=""></textarea>
                 </div>
                 <div class="col-1 saveColumn">
                     💾
@@ -54,4 +54,8 @@ function colorRows(calendarHour, element) {
 };
 
 renderTable();
+
+// `saveInputs()`
+//  trigger on a savebutton press event maybe
+// saves current text in the corresponding box to memory
 
