@@ -84,3 +84,10 @@ textarea {
   height: 100%;
   width: 100%;
 }
+
+/* glows blue when text areas are focused */
+.meetingPlan:focus { 
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}

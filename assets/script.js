@@ -1,10 +1,9 @@
 var currentDayEl = $('#currentDay');  
-
-currentDayEl.text(moment().format('dddd, MMMM Do'));
-
 var timeTableEl = $('#timeTable');
 
-// // column for loop
+currentDayEl.text(moment().format('dddd, MMMM Do')); // display day of week and month
+
+// column for loop
 function renderTable() {
     for (var i=0; i<=8; i++) {
         var hour = i + 9;
