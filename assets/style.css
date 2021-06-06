@@ -77,18 +77,19 @@ textarea {
   border: 2px solid red;
 }
 
-/* class for text areas s */
+/* class for text areas */
 .meetingPlan {
   position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
+  z-index: 3;
 }
 
 /* glows blue when text areas are focused */
 .meetingPlan:focus { 
-  outline: none !important;
+  outline: solid #6599d1;
   border-color: #6599d1;
   box-shadow: 0 0 15px #6599d1;
 }
@@ -103,6 +104,7 @@ textarea {
 .saveColumn{
   background-color: lightskyblue;
   border-radius: 0px 15px 15px 0px;
+  text-align: center;
 }
 
 .pastHour {
