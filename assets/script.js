@@ -4,7 +4,6 @@ var currentHour = moment().format('HH'); // the current hour
 
 currentDayEl.text(moment().format('dddd, MMMM Do')); // display day of week and month
 
-
 // this function builds the html elements that make up the planner
 function renderTable() {
     for (var i=0; i<=8; i++) {
