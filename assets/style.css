@@ -70,6 +70,17 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
+/* my css */
+
+/* help visualize columns */
 .helpBorder {
   border: 2px solid red;
+}
+
+.meetingPlan {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
 }
