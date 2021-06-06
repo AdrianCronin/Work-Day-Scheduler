@@ -21,9 +21,9 @@ function renderTable() {
                     ${hour}${ampm}
                 </div>
                 <div class="col-10 ">
-                    <textarea class="meetingPlan" placeholder="Add Meeting"></textarea>
+                    <textarea class="meetingPlan pastHour" placeholder="Add Meeting"></textarea>
                 </div>
-                <div class="col-1 ">
+                <div class="col-1 saveColumn">
                     💾
                 </div>
             </div>

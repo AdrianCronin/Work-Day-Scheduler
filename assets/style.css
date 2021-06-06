@@ -89,8 +89,8 @@ textarea {
 /* glows blue when text areas are focused */
 .meetingPlan:focus { 
   outline: none !important;
-  border-color: #719ECE;
-  box-shadow: 0 0 10px #719ECE;
+  border-color: #6599d1;
+  box-shadow: 0 0 15px #6599d1;
 }
 
 .hourColumn {
@@ -101,5 +101,18 @@ textarea {
 }
 
 .saveColumn{
+  background-color: lightskyblue;
+  border-radius: 0px 15px 15px 0px;
+}
 
+.pastHour {
+  background-color: rgb(192, 195, 199);
+}
+
+.currentHour {
+  background-color: rgb(226, 100, 100);
+}
+
+.futureHour {
+  background-color: rgb(124, 224, 120);
 }
