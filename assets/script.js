@@ -8,6 +8,7 @@ currentDayEl.text(moment().format('dddd, MMMM Do')); // display day of week and 
 function renderTable() {
     for (var i=0; i<=8; i++) {
         var hour = i + 9;
+        var dataHour = i + 9;
         var ampm = 'AM';
         if (hour === 12) {
             ampm = 'PM';
@@ -21,7 +22,7 @@ function renderTable() {
                 <div class="col-1 hourColumn">
                     ${hour}${ampm}
                 </div>
-                <div class="col-10">
+                <div class="col-10" data-hour="${dataHour}" id="idHour${dataHour}">
                     <textarea class="meetingPlan" placeholder="Add Meeting"></textarea>
                 </div>
                 <div class="col-1 saveColumn">
@@ -29,21 +30,26 @@ function renderTable() {
                 </div>
             </div>
         `);
+        var idString = "#idHour" + dataHour;
+        var idHourEl = $(idString);
+        var hourValue = idHourEl.data("hour");
+        // console.log(hourValue);
+        colorRows(hourValue, idHourEl);
     };
 };
 
 renderTable();
 
-function colorRows() {
-    // get current hour
-    // check current hour against planner hours
-    // if they are === add class .currentHour
-    // if current hour < planner hour add class .futureHour
-    // else add class .pastHour
-    // bonus refresh when hour rolls over
-}
+function colorRows(calendarHour, element) {
+    console.log(calendarHour);
+    console.log(element);
+    if (currentHour == calendarHour) {
+        element.addClass('currentHour');
+    } else if (currentHour < calendarHour) {
+        element.addClass('futureHour');
+    } else {
+        element.addClass('pastHour');
+    };
+};
 
 
-console.log(currentHour);
-console.log(typeof(currentHour));
-console.log(24 - currentHour);
