@@ -18,7 +18,7 @@ function renderTable() {
             ampm = 'PM'; // change AM to PM in the afternoon
         };
 
-        // this template literal creates the rows and columns filling in the hours and AM/PM from the variables above
+        // this template literal creates the rows and columns filling in the hours and AM/PM from the variables above and puts a save icon in the last column
         // it also generates dataset attributes and id's depending on the hour of the day they correspond to
         timeTableEl.append(`
             <div class="row">
@@ -30,10 +30,8 @@ function renderTable() {
                 </div>
                 <div class="col-1 saveColumn">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="white" class="bi bi-save-fill" viewBox="0 0 16 16">
-                        <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
-                    </svg>
-
+                    <i class="bi bi-save-fill"></i>
+                    
                 </div>
             </div>
         `);
@@ -67,4 +65,9 @@ renderTable();
 //  trigger when save buttons are hovered
 //  change the floppy disk 
 
-var savezColumnEl = $('.saveColumn');
+var saveColumnEl = $('.saveColumn');
+
+saveColumnEl.hover(function() {
+
+
+});
