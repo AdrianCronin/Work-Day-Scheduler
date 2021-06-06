@@ -32,3 +32,12 @@ function renderTable() {
 };
 
 renderTable();
+
+function colorRows() {
+    // get current hour
+    // check current hour against planner hours
+    // if they are === add class .currentHour
+    // if current hour < planner hour add class .futureHour
+    // else add class .pastHour
+    // bonus refresh when hour rolls over
+}
