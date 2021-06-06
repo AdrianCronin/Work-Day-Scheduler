@@ -1,5 +1,6 @@
 var currentDayEl = $('#currentDay');  
 var timeTableEl = $('#timeTable');
+var currentMoment = moment().format('HH'); // the current hour
 
 currentDayEl.text(moment().format('dddd, MMMM Do')); // display day of week and month
 
@@ -21,7 +22,7 @@ function renderTable() {
                     ${hour}${ampm}
                 </div>
                 <div class="col-10 ">
-                    <textarea class="meetingPlan pastHour" placeholder="Add Meeting"></textarea>
+                    <textarea class="meetingPlan" placeholder="Add Meeting"></textarea>
                 </div>
                 <div class="col-1 saveColumn">
                     💾
@@ -41,3 +42,8 @@ function colorRows() {
     // else add class .pastHour
     // bonus refresh when hour rolls over
 }
+
+
+console.log(currentMoment);
+console.log(typeof(currentMoment));
+console.log(24 - currentMoment);
