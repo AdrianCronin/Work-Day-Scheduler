@@ -69,11 +69,11 @@ saveColumnEl.click(function saveInputs(event) {
 // this function colors the background of the text areas by adding css classes
 function colorRows(calendarHour, element) {
     if (currentHour == calendarHour) {
-        element.addClass('currentHour');
+        element.addClass('present');
     } else if (currentHour < calendarHour) {
-        element.addClass('futureHour');
+        element.addClass('future');
     } else {
-        element.addClass('pastHour');
+        element.addClass('past');
     };
 };
 

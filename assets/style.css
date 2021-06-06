@@ -36,7 +36,7 @@ textarea {
   border-top: 1px solid white;
 }
 
-.hour {
+.hourColumn {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
@@ -57,7 +57,7 @@ textarea {
   color: white;
 }
 
-.saveBtn {
+.saveColumn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -72,12 +72,7 @@ textarea {
 
 /* my css */
 
-/* help visualize columns */
-.helpBorder {
-  border: 2px solid red;
-}
-
-/* class for text areas z-index makes sure the text areas stay on top of everything*/
+/* class for text areas, z-index makes sure the text areas stay on top of everything */
 .meetingPlan {
   position: absolute;
   top: 0px;
@@ -92,34 +87,4 @@ textarea {
   outline: solid #6599d1;
   border-color: #6599d1;
   box-shadow: 0 0 15px #6599d1;
-}
-
-/* set up borders for the hours column */
-.hourColumn {
-  border-left: 0px;
-  border-top: 2px solid grey;
-  border-right: 1px solid grey; 
-}
-
-/* set up styles for the save icon column */
-.saveColumn{
-  background-color: lightskyblue;
-  border-radius: 0px 15px 15px 0px;
-  text-align: center;
-  color: #ffffff;
-}
-
-/* class will be applied to past hour rows */
-.pastHour {
-  background-color: rgb(192, 195, 199);
-}
-
-/* class will be applied to the current hour row */
-.currentHour {
-  background-color: rgb(226, 100, 100);
-}
-
-/* class will be applied to future hour rows */
-.futureHour {
-  background-color: rgb(124, 224, 120);
 }
