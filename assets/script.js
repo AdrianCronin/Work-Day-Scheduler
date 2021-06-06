@@ -24,7 +24,7 @@ function renderTable() {
                 <textarea class="meetingPlan" placeholder="Add Meeting"></textarea>
             </div>
             <div class="col-1 helpBorder">
-                save button
+                💾
             </div>
             </div>
         `);
