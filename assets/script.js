@@ -31,7 +31,7 @@ function renderTable() {
                 <div class="col-1 saveColumn">
 
                     <i class="bi bi-save-fill"></i>
-                    
+
                 </div>
             </div>
         `);
@@ -65,9 +65,11 @@ renderTable();
 //  trigger when save buttons are hovered
 //  change the floppy disk 
 
-var saveColumnEl = $('.saveColumn');
+var saveColumnEl = $('.saveColumn'); // save buttons parent element reference
 
-saveColumnEl.hover(function() {
-
-
+// changes icon to black when hovering, changes back to white when not hovering
+saveColumnEl.hover(function(event) {
+    event.target.style.color ='#000000'
+}, function(event) {
+    event.target.style.color ='#ffffff'
 });
