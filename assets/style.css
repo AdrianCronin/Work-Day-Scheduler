@@ -77,14 +77,14 @@ textarea {
   border: 2px solid red;
 }
 
-/* class for text areas */
+/* class for text areas z-index makes sure the text areas stay on top of everything*/
 .meetingPlan {
   position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
-  z-index: 3;
+  z-index: 99;
 }
 
 /* glows blue when text areas are focused */
@@ -96,8 +96,7 @@ textarea {
 
 .hourColumn {
   border-left: 0px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 2px solid grey;
   border-right: 1px solid grey; 
 }
 
@@ -105,6 +104,7 @@ textarea {
   background-color: lightskyblue;
   border-radius: 0px 15px 15px 0px;
   text-align: center;
+  color: #ffffff;
 }
 
 .pastHour {
@@ -117,4 +117,8 @@ textarea {
 
 .futureHour {
   background-color: rgb(124, 224, 120);
+}
+
+#timeTable .row {
+  margin-bottom: 18px;
 }
