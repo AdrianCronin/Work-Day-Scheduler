@@ -55,8 +55,8 @@ var saveColumnEl = $('.saveColumn'); // save buttons' parent element reference, 
 
 // press save icon to save corresponding text area
 saveColumnEl.click(function saveInputs(event) {
-    var target = event.target.getAttribute("data-savebutton");
-    var x = 'textArea' + target
+    var target = event.target.getAttribute("data-savebutton"); 
+    var x = 'textArea' + target;
     var y = document.getElementById(x).value;
     
     localStorage.setItem(x, y); // textarea Id used as key, text is the value
