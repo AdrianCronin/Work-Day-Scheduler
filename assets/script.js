@@ -47,10 +47,12 @@ function renderTable() {
         };
         
         colorRows(hourValue, idHourEl);
+        
     }; // end of for loop   
 };
 
 renderTable(); // any references to HTML elements created by this function must be done after this call
+
 var saveColumnEl = $('.saveColumn'); // save buttons' parent element reference, only works after renderTable() executes
 
 // press save icon to save corresponding text area
@@ -74,7 +76,7 @@ function colorRows(calendarHour, element) {
     };
 };
 
-// changes icon to black when hovering, changes back to white when not hovering
+// changes save icon to black when hovering, changes back to white when not hovering
 saveColumnEl.hover(function(event) {
     event.target.style.color ='#000000'
 }, function(event) {
