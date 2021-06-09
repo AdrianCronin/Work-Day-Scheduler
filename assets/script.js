@@ -37,6 +37,7 @@ function renderTable() {
         
         </div>`);
         
+        // these variables reference elements created above
         var idHourEl = $("#idHour" + dataHour); // reference to element to pass as an argument
         var hourValue = idHourEl.data("hour"); // storing element's dataset attribute to pass as an argument
         var textAreaEl = document.getElementById("textArea" + dataHour); // text area element reference
