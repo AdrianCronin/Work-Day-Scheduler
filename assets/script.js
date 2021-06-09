@@ -23,17 +23,17 @@ function renderTable() {
         timeTableEl.append(`
         <div class="row">
         
-        <div class="col-1 hourColumn">
-            ${hour}${ampm} 
-        </div>
-        
-        <div class="col-10" data-hour="${dataHour}" id="idHour${dataHour}">
-            <textarea class="meetingPlan" id="textArea${dataHour}"></textarea>
-        </div>
-        
-        <div class="col-1 saveColumn" data-savebutton="${dataHour}">
-            <i class="bi bi-save-fill" data-savebutton="${dataHour}"></i>
-        </div>
+            <div class="col-1 hourColumn">
+                ${hour}${ampm} 
+            </div>
+            
+            <div class="col-10" data-hour="${dataHour}" id="idHour${dataHour}">
+                <textarea class="meetingPlan" id="textArea${dataHour}"></textarea>
+            </div>
+            
+            <div class="col-1 saveColumn" data-savebutton="${dataHour}">
+                <i class="bi bi-save-fill" data-savebutton="${dataHour}"></i>
+            </div>
         
         </div>`);
         
