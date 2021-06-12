@@ -23,7 +23,7 @@ function renderTable() {
         timeTableEl.append(`
         <div class="row">
         
-            <div class="col-1 hourColumn">
+            <div class="col-1 hourColumn">  
                 ${hour}${ampm} 
             </div>
             
